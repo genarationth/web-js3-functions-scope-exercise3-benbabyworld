@@ -59,38 +59,36 @@ let greetings = function() {
 }
 greetings()
 
-
 // ### Challenge Yourself
-
 // A teacher wants to create a rubric for grading. The rubric is from 0 - 11.
-
     // #### Part 1
-
 // A student passes if they have a score greater than or equal to 5.
 // Create a function that returns a boolean true or false.
 
 let isPass = function(score) {
-     score >= 5;
+    if (score >= 5) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
 }
-
-isPass(6);
-
+isPass(4);
 
 
-// #### Part 3
+// #### Part 2
 
-// A student has a perfect grade if their score is 11.
-// Add on to your function to print out "Perfect" for a score of 11.
+// A student has an excellent grade if they score higher than 8.
+// Add on to your function to print out "Excellent" for scores greater than 8.
 
 
-// let congrats = function(a) {
-//     if (a === 11) {
-//         console.log('Perfect');
-//     } else {
-//         console.log('You tried your best!');
-//     }
-// }
-// congrats(11)
+let excellent = function(a) {
+    if (a > 8) {
+        console.log('Excellent');
+    } else {
+        console.log('You tried your best!');
+    }
+}
+excellent(11)
 
 
 
@@ -98,4 +96,15 @@ isPass(6);
 
 // A student has a perfect grade if their score is 11.
 // Add on to your function to print out "Perfect" for a score of 11.
+
+
+let congrats = function(a) {
+    if (a === 11) {
+        console.log('Perfect');
+    } else {
+        console.log('You tried your best!');
+    }
+}
+congrats(11)
+
 
